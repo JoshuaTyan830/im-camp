@@ -574,6 +574,57 @@ button {
   }
 }
 
+/* ===== Map ===== */
+.map-wrapper {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-sm);
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+.map-wrapper .leaflet-control-attribution {
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  font-size: 0.6875rem;
+  border-radius: var(--radius-sm) 0 0 0;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-right: none;
+}
+
+.map-wrapper .leaflet-control-attribution a {
+  color: var(--accent);
+}
+
+.map-wrapper .leaflet-popup-content-wrapper {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+}
+
+.map-wrapper .leaflet-popup-tip {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.map-wrapper .leaflet-popup-content {
+  margin: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 /* ===== About / Features ===== */
 .section-about {
   background: var(--bg-soft);

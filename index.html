@@ -8,7 +8,19 @@
       content="個人作品集 — 前端開發與 UI 設計"
     />
     <title>田宏寬 | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -98,6 +110,26 @@
               <span class="stat-label">可及性優先</span>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="location" class="section section-map">
+        <div class="container">
+          <header class="section-header section-header--center reveal">
+            <p class="section-label">Location</p>
+            <h2>所在位置</h2>
+            <p class="section-lead">
+              以 OpenStreetMap 呈現地圖；可替換為你的工作室、學校或常駐城市。
+            </p>
+          </header>
+          <div class="map-wrapper reveal">
+            <div
+              id="map"
+              class="map"
+              role="application"
+              aria-label="台北 101 地圖"
+            ></div>
+          </div>
         </div>
       </section>
 
